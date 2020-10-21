@@ -1,7 +1,178 @@
 <!DOCTYPE html>
-<html>
-<body>
-
-<h2>hade</h2>
-</body>
+<html lang="id">
+    <head>
+    <title>My Profil</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+	<!-- https://versen.netlify.app/index.html -->
+	<!-- sematic article https://www.semrush.com/blog/semantic-html5-guide/ -->
+		<header>
+			<div class="container">
+				<img id="logo" src="assets/logo.png" width="32" height="32" title="logo"/>
+				<nav>
+					<ul class="clearfix">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Portfolio</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a class="button" href="#">Subscribe</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main>
+		
+			<div id="jumbotron">
+				<div class="in-jumbotron">
+					<h1> I'AM GRAPHIC DESIGNER </h1>
+					<div class="sub-h1-jum">
+						<p>Pingin Jadi Frontend Juga </p>
+					</div>
+				</div>
+			</div><!-- jumbotron -->
+			
+			<aside id="about">
+				<div class="in-about container clearfix">
+					<div class="kotak-bingkai">
+						<figure>
+							<img src="assets/image/foto-profil.png" title="poto profil"/>
+						</figure>
+					</div>
+					<div class="kotak-bingkai">
+						<div class="profil-detail">
+							<h2>Tentang Saya</h2>
+					
+							<table class="table-profil">
+								<tr>
+									<th>Nama</th>
+									<th>:</th>
+									<td>Juju Sarju</td>
+								</tr>
+								<tr>
+									<th>Cita-Cita</th>
+									<th>:</th>
+									<td>Menjadi Front end Expert</td>
+								</tr>
+								<tr>
+									<th>Soft Skill</th>
+									<th>:</th>
+									<td>Photoshop, CorelDRAW</td>
+								</tr>
+								<tr>
+									<th>Kegiatan</th>
+									<th>:</th>
+									<td>Mengikuti kursus di dicoding dll</td>
+								</tr>
+							</table>
+							<a class="button" href="#">More Detail</a>
+							
+						</div>
+					</div>
+				</div>
+			</aside>
+			
+			<div id="content" class="content container ">
+				<h2>Karya Ku</h2>
+				<p>Karya / Project yang Saya Pernah Kerjakan <br> Tiap Hari dan Selalu Jadi Rutinitas saya </p>
+				<div class="con-article clearfix">
+					<article>
+						<figure>
+						    
+							<img src="assets/image/portfolio/1.jpg" title="Image 1"/>
+						</figure>
+						<h3>judul</h3>
+					</article>
+					<article>
+						<figure>
+						    
+							<img src="assets/image/portfolio/2.jpg" title="Image 1"/>
+						</figure>
+						<h3>judul</h3>
+					</article>
+					<article>
+						<figure>
+						    
+							<img src="assets/image/portfolio/3.jpg" title="Image 1"/>
+						</figure>
+						<h3>judul</h3>
+					</article>
+					<article>
+						<figure>
+						    
+							<img src="assets/image/portfolio/4.jpg" title="Image 1"/>
+						</figure>
+						<h3>judul</h3>
+					</article>
+					<article>
+						<figure>
+						    
+							<img src="assets/image/portfolio/5.jpg" title="Image 1"/>
+						</figure>
+						<h3>judul</h3>
+					</article>
+					<article>
+						<figure>
+						    
+							<img src="assets/image/portfolio/6.jpg" title="Image 1"/>
+						</figure>
+						<h3>judul</h3>
+					</article>
+					
+				</div>
+			</div><!-- content -->
+			
+			<div id="recend-blog" class="container">
+				<h2>Recend Blog </h2>
+				<p class="subtitle-blog">Selain Saya Suka Desain, Saya Juga <br> Suka Menulis di Blog Saya Ini</p>
+				<div class="wrap-recend-blog clearfix">
+					<div class="recend-blog-content">
+						<div class="wrap-recend-blog-text">
+							<h3>Tutorial Photoshop Untuk Pemula</h3>
+							<p>Hai Teman Ketemu Lagi Dengan Saya Kali ini saya akan menulis tutorial Photoshop Bagi Pemula</p>
+							<a class="button" href="#">More Detail</a>
+						</div>
+					</div>
+					<div class="recend-blog-content">
+						<div class="wrap-recend-blog-text center">
+							<h3>Tutorial Photoshop Untuk Pemula</h3>
+							<p>Hai Teman Ketemu Lagi Dengan Saya Kali ini saya akan menulis tutorial Photoshop Bagi Pemula</p>
+							<a class="button" href="#">More Detail</a>
+						</div>
+					</div>
+					<div class="recend-blog-content">
+							<div class="wrap-recend-blog-text">
+							<h3>Tutorial Photoshop Untuk Pemula</h3>
+							<p>Hai Teman Ketemu Lagi Dengan Saya Kali ini saya akan menulis tutorial Photoshop Bagi Pemula</p>
+							<a class="button" href="#">More Detail</a>
+						</div>
+					</div>
+				</div>
+			</div><!-- recend-blog -->
+			
+			
+			
+			
+			
+			<div id="berlangganan">
+				<div id="subscribe" class="container">
+					<h2>Daftar Untuk Mendapatkan <br> Update Terbaru</h2>
+					<p>Jangan Lupa daftarkan email kamu untuk  <br> mendapatkan updatean terbaru  <br> dari aktifitas saya</p>
+					<div class="form-shubscribe">
+						<form action="#">
+							<input type="text" placeholder="Email address" name="mail" required >
+							<input type="submit" value="Subscribe" >
+						</form>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<span>Copyright All Reserved 2021</span>
+		</footer>
+		
+		<script src="assets/js/script.js"></script> 
+    </body>
 </html>
