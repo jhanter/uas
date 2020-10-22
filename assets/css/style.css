@@ -33,6 +33,7 @@ header{position:absolute;left:0;right:0; padding-top:1.875em ;z-index:3}
 /*menu*/
  
 #logo{float:left;}
+#burger-menu{float:right;display:none}
 
 nav{float:right}
 nav ul{margin:0;padding:0}
@@ -160,11 +161,45 @@ font-weight: 500;
 		}
 }
  @media screen and (max-width: 767px) {
+	 
+	 
+	 
 	h2{font-size:1.8em;line-height:1.1em}
 	body,input{line-height: 1.5em;font-size:0.875em;letter-spacing: 0.01em;}
 	aside#about,#content,#recend-blog{padding-bottom:1.875em;padding-top:1.875em}
-
-	header{padding-right:0.938em;padding-left:0.938em;}
+	
+	
+	header{padding-right:1.875em;padding-left:1.875em;}
+	#burger-menu{float:right;display:block}
+	nav{float:left;width:100%;padding-top:1.875em}
+	nav ul{margin:0;padding:1.875em;background-color:#9238A4;border-radius:15px;}
+	nav ul.topnav{display:none}
+	nav ul.topnav.responsive{display:block}
+	nav ul li{list-style:none;float:none}
+	nav ul li a{
+		font-size:0.813em;
+		font-weight:600;
+		display: block;
+		color: #f2f2f2;
+		text-align: center;
+		padding:15px 30px;
+		text-decoration: none;
+		text-transform:uppercase;
+		font-size: 0.875em;
+	}
+	
+	nav ul li a:hover{
+		background-color: #00BDC0;
+		border: none;
+		color: white;
+		padding: 15px 30px;
+		text-align: center;
+		text-decoration: none;
+		display: block;
+		cursor: pointer;
+		border-radius:5;
+	}
+	
  
 	.in-jumbotron h1{font-size:2rem;line-height:1.1em}
 	.in-jumbotron{width:100%}
