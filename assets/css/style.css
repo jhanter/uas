@@ -1,54 +1,81 @@
 
 /* all*/
+html{scroll-behavior: smooth;}
 body,input{font-family: 'Montserrat', sans-serif;
-    line-height: 1.6em;font-size:1em;letter-spacing: 0.02em;}
+	line-height: 1.6em;
+	font-size:1em;
+	letter-spacing: 0.02em;
+}
 body{margin:0}
-
-.container{max-width:960px;margin: 0 auto;position:relative}
+.container{
+	max-width:960px;
+	margin: 0 auto;
+	position:relative
+	}
 figure{margin:0}
 .clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
+	content: "";
+	clear: both;
+	display: table;
 }
 .button,nav ul li a:hover,input[type=submit]{
-  background-color: #00BDC0;
-  border: none;
-  color: white;
-  padding: 15px 30px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-  border-radius:50px;
+	background-color: #00BDC0;
+	border: none;
+	color: white;
+	padding: 15px 30px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	border-radius:50px;
 }
-
-h2{font-size:2.5em;letter-spacing: -0.02em;margin-bottom:0.938em;line-height:1.3em}
+h2{
+	font-size:2.5em;
+	letter-spacing: -0.02em;
+	margin-bottom:0.938em;
+	line-height:1.3em
+}
 aside#about,#content,#recend-blog{padding:3em 0}
 
 
 /*header*/
-header{position:absolute;left:0;right:0; padding-top:1.875em ;z-index:3}
+header{
+	position:absolute;
+	left:0;
+	right:0; 
+	padding-top:1.875em ;
+	z-index:3
+}
+header.sticky{
+	position:fixed;
+	background-color:#9238A4;
+	padding-top:0
+}
+header.sticky nav ul li a:hover{border-radius:0}
+header.sticky nav ul li a:active{color:red}
 
 /*menu*/
- 
-#logo{float:left;}
-#burger-menu{float:right;display:none}
-
+#logo{
+	float:left;
+	padding-top:0.9357em 
+}
+#burger-menu{
+	float:right;
+	display:none
+}
 nav{float:right}
 nav ul{margin:0;padding:0}
 nav ul li{list-style:none;float:left}
 nav ul li a{
-  font-size:0.813em;
-  font-weight:600;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding:15px 30px;
-  text-decoration: none;
-  text-transform:uppercase;
-  font-size: 0.875em;
-	}
+	font-weight:600;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding:15px 30px;
+	text-decoration: none;
+	text-transform:uppercase;
+	font-size: 0.875em;
+}
 	
 /*jumbotron*/
 #jumbotron{
@@ -74,49 +101,89 @@ nav ul li a{
     background-image: url(../image/jumbotron-images.png);
 }
 .in-jumbotron{
-  text-align:center;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  overflow: hidden;}
- .in-jumbotron h1{font-size:4rem;line-height:1.2em;margin:0;color:#ffffff}
+	text-align:center;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	overflow: hidden;
+}
+.in-jumbotron h1{
+	font-size:4rem;
+	line-height:1.2em;
+	margin:0;
+	color:#ffffff
+}
   
- .sub-h1-jum{
+.sub-h1-jum{
 	background-image: url(../image/bg-sub-jumbotron.png);
 	background-repeat:no-repeat;
 	background-position:center ;
 	background-size: cover;
 	background-size:25rem;
 	padding:2rem 0;
-  }
-  .sub-h1-jum p{font-size:1.5rem;color:#ffffff}
-  
+}
+.sub-h1-jum p{
+	font-size:1.5rem;
+	color:#ffffff
+}
   
   /*about*/
-  .kotak-bingkai{float:left;width:50%}
-  .kotak-bingkai figure{margin-right:3.750em} /* rubah karna wajib di responisve*/
-  .kotak-bingkai img{width:85%}
-  .table-profil{text-align:left;margin-bottom:3.750em}
-  .table-profil th,.table-profil td{padding:1rem 2rem 0 0}
+.kotak-bingkai{
+	float:left;
+	width:50%
+	}
+.kotak-bingkai figure{
+	margin-right:3.750em
+} 
+.kotak-bingkai img{width:85%}
+.table-profil{
+	text-align:left;
+	margin-bottom:3.750em
+}
+.table-profil th,.table-profil td{padding:1rem 2rem 0 0}
   
  /*CONTENT*/
- #content h2{text-align:center}
- #content p{text-align:center}
-  .con-article{padding-top:1.875em}
-  .con-article article{float:left;width:33.333333%;}
-  .con-article article img{width:100%;vertical-align:middle}
-  
+#content h2{text-align:center}
+#content p{text-align:center}
+.con-article{padding-top:1.875em}
+.con-article article{
+	float:left;
+	width:33.333333%;
+	margin-bottom:1.875em
+}
+.con-article article img{
+	width:100%;
+	vertical-align:middle
+}
+.con-article article h3{text-align:center}
+
  /*recen blog */
- #recend-blog h2{text-align:center}
- #recend-blog p.subtitle-blog{text-align:center}
- .recend-blog-content{float:left;width:33.333333%;}
- .wrap-recend-blog{padding-top:1.875em}
- .wrap-recend-blog-text{border:1px solid #00BDC0;padding:4em 1.875em}
- .wrap-recend-blog-text.center{border:1px solid #00BDC0;background-color:#00BDC0;color:#ffffff}
- .wrap-recend-blog-text h3{margin:0; margin-bottom:0.938em}
- .wrap-recend-blog-text.center .button{background-color:#ffffff;color:#00BDC0}
- .wrap-recend-blog-text p{margin-bottom:3.750em}
+#recend-blog h2{text-align:center}
+#recend-blog p.subtitle-blog{text-align:center}
+.recend-blog-content{
+	float:left;
+	width:33.333333%;
+}
+.wrap-recend-blog{padding-top:1.875em}
+.wrap-recend-blog-text{
+	border:1px solid #00BDC0;
+	padding:4em 1.875em
+}
+.wrap-recend-blog-text.center{
+	border:1px solid #00BDC0;
+	background-color:#00BDC0;
+	color:#ffffff
+}
+.wrap-recend-blog-text h3{
+	margin:0;
+	margin-bottom:0.938em
+}
+.wrap-recend-blog-text.center .button{
+	background-color:#ffffff;
+	color:#00BDC0
+}
+.wrap-recend-blog-text p{margin-bottom:3.750em}
  
  
  /*SUBSCRIBE*/
@@ -132,47 +199,89 @@ nav ul li a{
 	background-size: cover;
     background-image: url(../image/image-subscribe.png);
 }
-#subscribe{padding-top:9em;padding-bottom:6em}
+#subscribe{
+	padding-top:9em;
+	padding-bottom:6em
+}
 #subscribe h2,#subscribe p{text-align:center}
 
- .form-shubscribe{position:relative;width:70%;margin:0 auto;padding-top:1.875em}
+.form-shubscribe{
+	position:relative;
+	width:70%;
+	margin:0 auto;
+	padding-top:1.875em
+}
 .form-shubscribe input[type=text]{
-position:relative;
-padding:0;margin:0;
-border: 1px solid #00BDC0; 
-border-radius:50px;
-padding:15px 30px;
-width:calc(100% - 210px);
-left:0;
-font-weight: 500;
+	position:relative;
+	padding:0;margin:0;
+	border: 1px solid #00BDC0; 
+	border-radius:50px;
+	padding:15px 30px;
+	width:calc(100% - 210px);
+	left:0;
+	font-weight: 500;
 }
 
- 
  /*footer*/
- footer{text-align:center;padding:1.875em 0;background-color:#00BDC0;color:#ffffff}
+ footer{
+	text-align:center;
+	padding:1.875em 0;
+	background-color:#00BDC0;
+	color:#ffffff
+}
  
  /* responsive */
- 
  @media screen and (max-width: 1020px) {
 	aside#about,#content,#recend-blog{padding:3em 1.875em;}
-	header{ padding-top:1.875em;padding-right:1.875em; padding-left:1.875em; }
-	.kotak-bingkai img {
-			width: 108%;
-		}
+	header{ 
+		padding-top:1.875em;
+		padding-right:1.875em; 
+		padding-left:1.875em; 
+	}
+	.kotak-bingkai img {width: 108%;}
 }
+
  @media screen and (max-width: 767px) {
-	 
-	 
-	 
-	h2{font-size:1.8em;line-height:1.1em}
-	body,input{line-height: 1.5em;font-size:0.875em;letter-spacing: 0.01em;}
-	aside#about,#content,#recend-blog{padding-bottom:1.875em;padding-top:1.875em}
-	
-	
-	header{padding-right:1.875em;padding-left:1.875em;}
-	#burger-menu{float:right;display:block}
-	nav{float:left;width:100%;padding-top:1.875em}
-	nav ul{margin:0;padding:1.875em;background-color:#9238A4;border-radius:15px;}
+	h2{
+		font-size:1.8em;
+		line-height:1.1em
+		}
+	body,input{
+		line-height: 1.5em;
+		font-size:0.875em;
+		letter-spacing: 0.01em;
+	}
+	aside#about,#content,#recend-blog{
+		padding-bottom:1.875em;
+		padding-top:1.875em
+	}
+	header{
+		padding-right:1.875em;
+		padding-left:1.875em;
+	}
+	header.sticky{
+		position:fixed;
+		background-color:#9238A4;
+		padding-top:1.875em
+	}
+	header.sticky nav ul li a:hover{
+		border-radius:15px
+	}
+	#burger-menu{
+		float:right;
+		display:block
+	}
+	nav{
+		float:left;
+		width:100%;
+		padding-top:1.875em
+	}
+	nav ul{
+		margin:0;
+		padding:1.875em;
+		background-color:#9238A4;
+		border-radius:15px;
+	}
 	nav ul.topnav{display:none}
 	nav ul.topnav.responsive{display:block}
 	nav ul li{list-style:none;float:none}
@@ -201,12 +310,18 @@ font-weight: 500;
 	}
 	
  
-	.in-jumbotron h1{font-size:2rem;line-height:1.1em}
+	.in-jumbotron h1{
+		font-size:2rem;
+		line-height:1.1em
+	}
 	.in-jumbotron{width:100%}
 	.sub-h1-jum{background-size:12rem;}
 	.sub-h1-jum p{font-size:0.938em;}
   
-	.kotak-bingkai{float:none;width:100%}
+	.kotak-bingkai{
+		float:none;
+		width:100%
+	}
 	.kotak-bingkai img {width: 100%;}
 	.table-profil th,.table-profil td{padding:1rem 1rem 0 0}
 	.kotak-bingkai figure{margin-right:0}

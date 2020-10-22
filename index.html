@@ -7,30 +7,27 @@
 	<link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
-	<!-- https://versen.netlify.app/index.html -->
-	<!-- sematic article https://www.semrush.com/blog/semantic-html5-guide/ -->
-		<header>
-			<div class="container">
-				<img id="logo" src="assets/logo.png" width="32" height="32" title="logo"/>
-				<a id="burger-menu" href="javascript:void(0);" onclick="myFunction()"><img src="assets/burger-menu.png" width="32" height="32" title="burgermenu"/></a>
+		<header id="navbar">
+			<div class="container clearfix">
+				<img id="logo" class="light" src="assets/logo.png" width="32" height="32" title="logo"/>
+				<a id="burger-menu" href="javascript:void(0);" onclick="menu()"><img src="assets/burger-menu.png" width="32" height="32" title="burgermenu"/></a>
 				<nav>
 					<ul id="myTopnav" class="topnav">
-						<li><a href="#">Home</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Portfolio</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Subscribe</a></li>
+						<li><a href="#jumbotron">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#content">Portfolio</a></li>
+						<li><a href="#recend-blog">Blog</a></li>
+						<li><a href="#berlangganan">Subscribe</a></li>
 					</ul>
 				</nav>
 			</div>
 		</header>
 		<main>
-		
 			<div id="jumbotron">
 				<div class="in-jumbotron">
 					<h1> I'AM GRAPHIC DESIGNER </h1>
 					<div class="sub-h1-jum">
-						<p>Pingin Jadi Frontend Juga </p>
+						<p>Pingin Jadi Front End Juga </p>
 					</div>
 				</div>
 			</div><!-- jumbotron -->
@@ -55,7 +52,7 @@
 								<tr>
 									<th>Cita-Cita</th>
 									<th>:</th>
-									<td>Menjadi Front end Expert</td>
+									<td>Menjadi Front End Expert</td>
 								</tr>
 								<tr>
 									<th>Soft Skill</th>
@@ -65,15 +62,15 @@
 								<tr>
 									<th>Kegiatan</th>
 									<th>:</th>
-									<td>Mengikuti kursus di dicoding dll</td>
+									<td>Mengikuti kelas dicoding </td>
 								</tr>
 							</table>
-							<a class="button" href="#">More Detail</a>
+							<a class="button" href="#">Detail Info</a>
 							
 						</div>
 					</div>
 				</div>
-			</aside>
+			</aside><!-- aside -->
 			
 			<div id="content" class="content container ">
 				<h2>Karya Ku</h2>
@@ -84,42 +81,42 @@
 						    
 							<img src="assets/image/portfolio/1.jpg" title="Image 1"/>
 						</figure>
-						<h3>judul</h3>
+						<h3>Motor Moge Vector</h3>
 					</article>
 					<article>
 						<figure>
 						    
 							<img src="assets/image/portfolio/2.jpg" title="Image 1"/>
 						</figure>
-						<h3>judul</h3>
+						<h3>Motor Merah Vector</h3>
 					</article>
 					<article>
 						<figure>
 						    
 							<img src="assets/image/portfolio/3.jpg" title="Image 1"/>
 						</figure>
-						<h3>judul</h3>
+						<h3>Helem Vector</h3>
 					</article>
 					<article>
 						<figure>
 						    
 							<img src="assets/image/portfolio/4.jpg" title="Image 1"/>
 						</figure>
-						<h3>judul</h3>
+						<h3>Mobil Vector</h3>
 					</article>
 					<article>
 						<figure>
 						    
 							<img src="assets/image/portfolio/5.jpg" title="Image 1"/>
 						</figure>
-						<h3>judul</h3>
+						<h3>Robot Logo Vector</h3>
 					</article>
 					<article>
 						<figure>
 						    
 							<img src="assets/image/portfolio/6.jpg" title="Image 1"/>
 						</figure>
-						<h3>judul</h3>
+						<h3>T-Shirt Mockup</h3>
 					</article>
 					
 				</div>
@@ -131,14 +128,14 @@
 				<div class="wrap-recend-blog clearfix">
 					<div class="recend-blog-content">
 						<div class="wrap-recend-blog-text">
-							<h3>Tutorial Photoshop Untuk Pemula</h3>
+							<h3>Tutorial Adobe Illustrator Untuk Pemula</h3>
 							<p>Hai Teman Ketemu Lagi Dengan Saya Kali ini saya akan menulis tutorial Photoshop Bagi Pemula</p>
 							<a class="button" href="#">More Detail</a>
 						</div>
 					</div>
 					<div class="recend-blog-content">
 						<div class="wrap-recend-blog-text center">
-							<h3>Tutorial Photoshop Untuk Pemula</h3>
+							<h3>Tutorial CorelDRAW Untuk Pemula</h3>
 							<p>Hai Teman Ketemu Lagi Dengan Saya Kali ini saya akan menulis tutorial Photoshop Bagi Pemula</p>
 							<a class="button" href="#">More Detail</a>
 						</div>
@@ -153,14 +150,11 @@
 				</div>
 			</div><!-- recend-blog -->
 			
-			
-			
-			
-			
+
 			<div id="berlangganan">
 				<div id="subscribe" class="container">
 					<h2>Daftar Untuk Mendapatkan <br> Update Terbaru</h2>
-					<p>Jangan Lupa daftarkan email kamu untuk  <br> mendapatkan updatean terbaru  <br> dari aktifitas saya</p>
+					<p>Jangan Lupa daftarkan email kamu untuk  <br> mendapatkan update terbaru  <br> dari aktifitas saya</p>
 					<div class="form-shubscribe">
 						<form action="#">
 							<input type="text" placeholder="Email address" name="mail" required >
@@ -168,7 +162,7 @@
 						</form>
 					</div>
 				</div>
-			</div>
+			</div><!-- Berlangganan -->
 		</main>
 		<footer>
 			<span>Copyright All Reserved 2021</span>
